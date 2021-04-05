@@ -1,0 +1,2 @@
+Recupera los cambios anteriores al git commit
+git checkout -- .
