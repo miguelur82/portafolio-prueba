@@ -1,6 +1,6 @@
 <div class="ae-grid au-xs-ta-center au-mb-4">
-    <div class="animate__animated animate__fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/team-1.jpg" alt="" class="au-mb-3">
-        <h5 class="ae-u-bolder au-mt-2">Robert T. Williams</h5>
+    <!-- <div class="animate__animated animate__fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/team-1.jpg" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{personaList[0].nombre}}</h5>
         <p class="ae-u-bolder au-mb-3">Graphic Designer</p>
         <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p><a href="#0" class="ae-u-bolder au-underline">@robertwilliams</a>
     </div>
@@ -13,6 +13,11 @@
         <h5 class="ae-u-bolder au-mt-2">Patrick Anderson</h5>
         <p class="ae-u-bolder au-mb-3">Art Director</p>
         <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#0" class="ae-u-bolder au-underline">@patrickanderson</a>
+    </div> -->
+    <div *ngFor="let personalista of personaList" class="animate__animated animate__fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"><img [src]="personalista.url" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{personalista.nombre}}</h5>
+        <p class="ae-u-bolder au-mb-3">{{personalista.subtitulo}}</p>
+        <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{personalista.frase}}</p><a href="#0" class="ae-u-bolder au-underline">{{personalista.twitter}}</a>
     </div>
 </div>
 <div class="ae-grid au-pt-2">

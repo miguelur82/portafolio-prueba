@@ -6,3 +6,13 @@
 .animate__animated.animate__fadeIn {
     --animate-duration: 0.6s;
 }
+
+
+/*
+  Color del Loading
+*/
+
+svg path,
+svg rect {
+    fill: black;
+}
