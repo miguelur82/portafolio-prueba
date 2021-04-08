@@ -1,2 +1,5 @@
 Recupera los cambios anteriores al git commit
 git checkout -- .
+
+construir la aplicacion:
+ ng build --prod
